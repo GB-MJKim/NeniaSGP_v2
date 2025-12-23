@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- 여기에 Style, Brush 등을 넣거나 -->
+    <!-- 다른 사전을 병합해서 쓰면 됩니다 -->
+    <ResourceDictionary.MergedDictionaries>
+        <!-- 예: <ResourceDictionary Source="ButtonStyles.xaml"/> -->
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

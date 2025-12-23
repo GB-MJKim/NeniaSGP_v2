@@ -1,0 +1,7 @@
+﻿<Page x:Class="Nenia.SGP.Views.BackupPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <TextBlock Text="상품 목록" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Page>

@@ -1,0 +1,63 @@
+﻿<Window x:Class="Nenia.SGP.Views.ProductEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="상품 편집" Width="520" Height="auto"
+        WindowStartupLocation="CenterOwner">
+    <ScrollViewer>
+        <StackPanel Margin="20" Orientation="Vertical">
+
+            <StackPanel Margin="20">
+
+                <StackPanel Orientation="Horizontal" Margin="0,4,0,10">
+                    <Button Content="이미지 선택" Width="120" Click="SelectImage_Click"/>
+                    <TextBlock x:Name="ImagePathText"
+                           Margin="10,0,0,0"
+                           VerticalAlignment="Center"
+                           Foreground="Gray"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="MainPreview" Width="140" Height="140" Stretch="UniformToFill" Margin="0,0,10,0"/>
+                    <Image x:Name="ThumbPreview" Width="100" Height="100" Stretch="UniformToFill"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <TextBlock Text="상품 정보" FontSize="22" FontWeight="Bold" Margin="0,0,0,12"/>
+
+            <TextBlock Text="상품명(필수)" />
+            <TextBox x:Name="ProductNameBox" Margin="0,4,0,12"/>
+
+            <TextBlock Text="용량" />
+            <TextBox x:Name="CapacityBox" Margin="0,4,0,12"/>
+
+            <TextBlock Text="표준가" />
+            <TextBox x:Name="StandardPriceBox" Margin="0,4,0,12"/>
+
+            <TextBlock Text="100g 단가(선택)" />
+            <TextBox x:Name="PricePerUnitBox" Margin="0,4,0,12"/>
+
+            <TextBlock Text="보관 방식" />
+            <ComboBox x:Name="StorageTypeCombo" Margin="0,4,0,12">
+                <ComboBoxItem Content="상온"/>
+                <ComboBoxItem Content="냉장"/>
+                <ComboBoxItem Content="냉동"/>
+            </ComboBox>
+
+            <TextBlock Text="태그" />
+            <TextBox x:Name="TagsBox" Margin="0,4,0,12"/>
+
+            <TextBlock Text="알레르기" />
+            <TextBox x:Name="AllergyBox" Margin="0,4,0,12"/>
+
+            <TextBlock Text="설명" />
+            <TextBox x:Name="DescriptionBox" Margin="0,4,0,12" Height="120"
+                     TextWrapping="Wrap" AcceptsReturn="True"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                <Button Content="저장" Width="100" Margin="0,0,10,0" Click="Save_Click"/>
+                <Button Content="취소" Width="100" Click="Cancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
